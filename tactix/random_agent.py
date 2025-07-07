@@ -26,3 +26,7 @@ class RandomTacTixAgent(Agent):
     def act(self, obs):
         actions = self.get_valid_actions(obs["board"])
         return random.choice(actions) if actions else None
+    
+    def heuristic_utility(self, board):
+        # Random agent does not use heuristics, so we return a constant value
+        return 0.0

@@ -9,4 +9,10 @@ class Agent(ABC):
 
     @abstractmethod
     def act(self, obs):
-        return NotImplementedError
+        #return NotImplementedError
+        pass
+    
+    @abstractmethod
+    def heuristic_utility(self, board: TacTixEnv):
+        pass
+
